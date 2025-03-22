@@ -22,31 +22,75 @@ section.capa p{
     font-size: 1.5rem;
     font-weight: 200;
 }
-section.servicos{
-    color: #5e5e5e;
-    background: #5e5e5e;
-    padding: 2vw 4vw;
-}
-section.servicos ul{
+/*================Serviços==============*/
+section.servicos ul li{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+section.servicos ul li.branco{
+    background: #ebebeb;
+    color: #5e5e5e;
+    padding: 4vw 0;
+}
+section.servicos ul li.cinza{
+    background: #5e5e5e;
+    color: #ebebeb;
+    padding: 4vw 0;
+}
+section.servicos ul li div img{
+    border-radius: 10px ;
+    height: 400px;
+    width: 300px;
+}
+section.servicos ul li.cinza div img{
+    border: solid 1px #fff;
+}
+section.servicos ul li.branco div img{
+    border: solid 1px #000;
+}
+section.servicos ul li div ul{
+    display: flex;
+    justify-content: center;
+    width: 300px;
     flex-wrap: wrap;
 }
-section.servicos ul li{
-    padding: 2vw;
-    background: #fff;
+section.servicos ul li div ul li img{
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
-    border: #fff solid 1px;
-    text-align: center;
-    transition: all 1s;
+    margin: 3px;
+    transition: all 0.5s;
 }
-section.servicos ul li:hover{
-    color: #fff;
-    background: #5e5e5e;
-    box-shadow: 5px 5px 5px #ffffffbb;
+section.servicos ul li div ul li img:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
-section.servicos ul li h2{
-    font-size: 2rem;
-    margin: 0 0 1vw 0;
+section.servicos ul li.cinza div ul li img{
+    border: 0.5px solid #fff;
+}
+section.servicos ul li.branco div ul li img{
+    border: 0.5px solid #000;
+}
+section.servicos ul li div h2{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 2vw 0;
+}
+section.servicos ul li div p{
+    margin: 1vw 0;
+    font-size: 1.3rem;
+}
+section.servicos ul li div a{
+    color: #ebebeb;
+    border: 1px solid #000;
+    background: #000;
+    margin: 2vw 0;
+    padding: 0 2vw;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+section.servicos ul li div a:hover{
+    color: #000;
+    background-color: #fff;
 }
