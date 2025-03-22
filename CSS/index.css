@@ -1,0 +1,125 @@
+/*fonte nome header*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital@0;1&display=swap');
+
+
+section.capa{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.3)), #5e5e5e;
+    background-size: 100% auto;
+    padding: 30vw 10vw 30vw 10vw;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    transition: all 2s;
+    color: #fff;
+}
+section.capa-show{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.3)), url(../IMGS/index/capa-index.png) no-repeat center center;
+    background-size: 100% auto;
+    padding: 30vw 10vw 30vw 10vw;
+}
+/*================Capa==============*/
+section.capa h2{
+    font-size: 4rem;
+    font-weight: 300;
+}
+section.capa p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+/*===============Section Objetiva================*/
+section.objetiva{
+    padding: 5vw 0 5vw 0;
+    background: #5e5e5e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #fff;
+}
+section.objetiva div h2{
+    margin: 0 0 2vw 0;
+    font-size: 2rem;
+    font-weight: 400;
+}
+section.objetiva ul{
+    border-left: solid 1px #fff;
+    padding: 0 4vw;
+    transition: all 1s;
+}
+section.objetiva ul:nth-child(2){
+    transition-delay: 400ms;
+}
+section.objetiva ul  li{
+    border: solid 0.5px #fff;
+    padding: 1vw 2vw;
+    border-radius: 20px;
+    margin: 1vw 0;
+    text-align: center;
+    transition: all 700ms;
+}
+section.objetiva ul li:hover{
+    background: #ffffffb2;
+    color: #5e5e5e;
+}
+section.objetiva ul li span{
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+}
+section.local{
+    background: #ebebeb;
+    color: #5e5e5e;
+    display: flex;
+    padding: 5vw 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+section.local div.infos{
+    text-align: center;
+}
+section.local div.infos h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 2vw 0;
+}
+section.local div.infos span{
+    margin: 3vw 0;
+    font-size: 6rem;
+}
+section.local div.maps{
+    background: #5e5e5e;
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.local div.maps span{
+    position: absolute;
+    font-size: 4rem;
+    transition: all 1s;
+}
+section.local div.maps p{
+    position: absolute;
+    transform: translateY(50px);
+    font-size: 20px;
+    transition: all 1s;
+}
+section.local div.maps iframe.map{
+    border-radius: 10px;
+    border: solid #5e5e5e 2px;
+    opacity: 0;
+    width: 600px;
+    height: 450px;
+    transition: all 1s;
+}
+section.local div.maps iframe.map:hover{
+    opacity: 1;
+}
+section.local div.maps:hover span{
+    opacity: 0;
+}
+section.local div.maps:hover p{
+    opacity: 0;
+}
